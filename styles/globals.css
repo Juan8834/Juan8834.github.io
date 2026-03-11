@@ -1,0 +1,371 @@
+/* =====================
+   Base / Reset
+===================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background: #0b0f19;
+  color: #eaeaf0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =====================
+   Layout Containers
+===================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* =====================
+   Sections (Layered Look)
+===================== */
+section {
+  padding: 5rem 0;
+}
+
+.section-dark {
+  background: #0b0f19;
+}
+
+.section-light {
+  background: #f5f6fa;
+  color: #111;
+}
+
+/* =====================
+   Typography
+===================== */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  line-height: 1.7;
+  color: #555;
+}
+
+/* =====================
+   Buttons
+===================== */
+.btn-primary {
+  background-color: #ffcc00;
+  color: #111;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e6b800;
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  background-color: #111;
+  color: #ffcc00;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ffcc00;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-dark:hover {
+  background-color: #ffcc00;
+  color: #111;
+  transform: translateY(-2px);
+}
+
+/* =====================
+   Navbar
+===================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: #0f1424;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-weight: 600;
+  color: #eaeaf0;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffcc00;
+}
+
+/* =====================
+   Footer
+===================== */
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-btn {
+  background-color: #0077b5;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.footer-btn:hover {
+  background-color: #005f91;
+  transform: translateY(-2px);
+}
+
+/* =====================
+   Footer Button Colors
+===================== */
+
+.footer-btn:nth-child(1) {
+  background: #24292e; /* GitHub */
+}
+
+.footer-btn:nth-child(2) {
+  background: #0077b5; /* LinkedIn */
+}
+
+.footer-btn:nth-child(3) {
+  background: #d44638; /* Email */
+}
+
+
+
+/* =====================
+   Project Cards (NEW)
+===================== */
+.project-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-content h3 {
+  font-size: 1.25rem;
+  color: #111;
+  margin-bottom: 0.75rem;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-button {
+  align-self: flex-start;
+  background: #ffcc00;
+  color: #111;
+  font-weight: 600;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.project-button:hover {
+  background: #e6b800;
+  transform: translateY(-2px);
+}
+
+/* =====================
+   About / Profile
+===================== */
+.profile-pic {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+
+  /* Larger, more open oval */
+  border-radius: 30% 30% 40% 40%;
+
+  padding: 6px;
+
+  background: linear-gradient(
+    135deg,
+    #ffcc00,
+    #ffd966,
+    #ffcc00
+  );
+
+  box-shadow:
+    0 0 20px rgba(255, 204, 0, 0.4),
+    0 20px 40px rgba(0, 0, 0, 0.45);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Image inside the gradient ring */
+.profile-pic {
+  background-clip: padding-box;
+}
+
+/* Hover effect */
+.profile-pic:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow:
+    0 0 35px rgba(255, 204, 0, 0.7),
+    0 30px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* =====================
+   Responsive
+===================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+}
+
+/* =====================
+   Mobile Responsiveness
+===================== */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .btn-primary,
+  .btn-dark,
+  .project-button {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 1rem;
+  }
+
+  /* Larger oval on mobile too */
+  .profile-pic {
+    width: 220px;
+    height: 300px;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-image img {
+    height: 180px;
+  }
+
+  .project-content {
+    padding: 1.2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem 1rem;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .project-image img {
+    height: 150px;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
