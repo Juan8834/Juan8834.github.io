@@ -8,7 +8,7 @@ export default function Projects() {
       title: "Financial Dashboard",
       description:
         "Manage and track finances with secure authentication using NextAuth.js, search invoices by multiple fields, responsive design for desktop and mobile.",
-      imgSrc: "/images/financial-dashboard.png",
+      imgSrc: "/images/financial-dashboard.jpg",
       liveUrl: "https://nextjs-dashboard-pi-seven.vercel.app",
       featured: true
     },
@@ -16,7 +16,7 @@ export default function Projects() {
       title: "Fraud Detection Dashboard",
       description:
         "Full-stack fraud detection dashboard built with Vite + React for frontend, Express + Node for backend, and PostgreSQL via Neon. View and analyze transactions in real time.",
-      imgSrc: "/images/fraud-dashboard.png",
+      imgSrc: "/images/fraud-dashboard.jpg",
       liveUrl: "https://fraud-detection-frontend-lqc6.vercel.app",
       featured: true
     },
@@ -24,7 +24,7 @@ export default function Projects() {
       title: "Pokémon List",
       description:
         "Explore Pokémon data from the official API with search, pagination, and detailed stats. Fully responsive and interactive.",
-      imgSrc: "/images/pokemon-list.png",
+      imgSrc: "/images/pokemon-app.jpg",
       liveUrl: "https://pokemon-list-seven-omega.vercel.app",
       featured: false
     },
@@ -32,7 +32,7 @@ export default function Projects() {
       title: "Pac-Man Game",
       description:
         "Grid-based Pac-Man game using HTML, CSS, and JavaScript. Navigate the maze, eat dots, and enjoy smooth animations.",
-      imgSrc: "/images/pacman-game.png",
+      imgSrc: "/images/pacman-app.jpg",
       liveUrl: "https://juan8834.github.io/pacman-game/",
       featured: false
     },
@@ -40,7 +40,7 @@ export default function Projects() {
       title: "Tic-Tac-Toe Game",
       description:
         "React-based Tic-Tac-Toe with animated Xs and Os, responsive design, and confetti celebration on wins.",
-      imgSrc: "/images/tictactoe.png",
+      imgSrc: "/images/tic-tac-toe.jpg",
       liveUrl: "https://Juan8834.github.io/Juans-tic-tac-toe-demo",
       featured: false
     }
