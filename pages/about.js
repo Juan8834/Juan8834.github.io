@@ -35,7 +35,7 @@ export default function About() {
             {/* Profile */}
             <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
               <img
-                src="https://github.com/Juan8834/Juan8834.github.io/blob/main/images/me.jpg?raw=true"
+                src="/images/me.jpg"
                 alt="Juan Peralta"
                 className="profile-pic"
                 style={{ marginBottom: "1.5rem" }}

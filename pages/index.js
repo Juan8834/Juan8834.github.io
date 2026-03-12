@@ -54,7 +54,7 @@ export default function Home() {
             {/* Image */}
             <div style={{ textAlign: "center" }}>
               <img
-                src="https://github.com/Juan8834/Juan8834.github.io/blob/main/images/me.jpg?raw=true"
+                src="/images/me.jpg"
                 alt="Juan Peralta"
                 className="profile-pic"
                 style={{
