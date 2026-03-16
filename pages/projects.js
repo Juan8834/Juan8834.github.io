@@ -25,7 +25,7 @@ export default function Projects() {
       description:
         "Explore Pokémon data from the official API with search, pagination, and detailed stats. Fully responsive and interactive.",
       imgSrc: "/images/pokemon-app.jpg",
-      liveUrl: "https://pokemon-list-seven-omega.vercel.app",
+      liveUrl: "https://Pokemon-list-seven-omega.vercel.app",
       featured: false
     },
     {
