@@ -127,8 +127,8 @@ export default function Home() {
           alt="Financial Dashboard"
           style={{
             width: "100%",
-            height: "100px",
-            objectFit: "cover",
+            height: "280px",
+            objectFit: "top",
             borderRadius: "10px",
             marginBottom: "1rem"
           }}
@@ -166,8 +166,8 @@ export default function Home() {
           alt="Fraud Detection Dashboard"
           style={{
             width: "100%",
-            height: "100px",
-            objectFit: "cover",
+            height: "280px",
+            objectFit: "top",
             borderRadius: "10px",
             marginBottom: "1rem"
           }}

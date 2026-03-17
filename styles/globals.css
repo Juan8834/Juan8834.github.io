@@ -183,9 +183,9 @@ p {
 
 .project-image img {
   width: 100%;
-  height: 200px;
+  height: 280px; /* increase this */
   object-fit: cover;
-  transition: transform 0.4s ease;
+  object-position: top;
 }
 
 .project-card:hover img {
