@@ -183,9 +183,11 @@ p {
 
 .project-image img {
   width: 100%;
-  height: 280px; /* increase this */
+  height: 280px; /* keep consistent */
   object-fit: cover;
   object-position: top;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover img {
@@ -210,15 +212,26 @@ p {
   color: #555;
   margin-bottom: 1.5rem;
   flex-grow: 1;
+  line-height: 1.6;
 }
 
+/* Buttons container */
+.project-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: auto; /* push buttons to bottom */
+}
+
+/* Primary Button */
 .project-button {
-  align-self: flex-start;
+  display: inline-block;
   background: #ffcc00;
   color: #111;
   font-weight: 600;
   padding: 0.6rem 1.3rem;
   border-radius: 8px;
+  text-decoration: none;
   transition: background 0.25s ease, transform 0.2s ease;
 }
 
@@ -227,6 +240,35 @@ p {
   transform: translateY(-2px);
 }
 
+/* Secondary Button (GitHub) */
+.project-button.secondary {
+  background: transparent;
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+}
+
+.project-button.secondary:hover {
+  background: #ffcc00;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .project-card {
+    margin-bottom: 2rem;
+  }
+  
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .project-button, 
+  .project-button.secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
 /* =====================
    About / Profile
 ===================== */

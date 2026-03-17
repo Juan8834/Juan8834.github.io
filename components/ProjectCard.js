@@ -1,4 +1,10 @@
-export default function ProjectCard({ title, description, imgSrc, liveUrl }) {
+export default function ProjectCard({
+  title,
+  description,
+  imgSrc,
+  liveUrl,
+  githubUrl
+}) {
   return (
     <div className="project-card">
       <div className="project-image">
@@ -9,14 +15,25 @@ export default function ProjectCard({ title, description, imgSrc, liveUrl }) {
         <h3>{title}</h3>
         <p>{description}</p>
 
-        <a
-          href={liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-button"
-        >
-          View Live Project →
-        </a>
+        <div className="project-buttons">
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-button"
+          >
+            Live Demo →
+          </a>
+
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-button secondary"
+          >
+            View Code
+          </a>
+        </div>
       </div>
     </div>
   );

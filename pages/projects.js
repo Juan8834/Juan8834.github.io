@@ -7,45 +7,49 @@ export default function Projects() {
     {
       title: "Financial Dashboard",
       description:
-        "Manage and track finances with secure authentication using NextAuth.js, search invoices by multiple fields, responsive design for desktop and mobile.",
+        "Developed a full-stack financial dashboard using Next.js and NextAuth.js, enabling secure user authentication and dynamic invoice management. Implemented advanced search functionality across multiple fields and designed a fully responsive UI for seamless use across devices.",
       imgSrc: "/images/financial-dashboard.jpg",
       liveUrl: "https://nextjs-dashboard-pi-seven.vercel.app",
+      githubUrl: "https://github.com/Juan8834/nextjs-dashboard", 
       featured: true
     },
     {
       title: "Fraud Detection Dashboard",
       description:
-        "Full-stack fraud detection dashboard built with Vite + React for frontend, Express + Node for backend, and PostgreSQL via Neon. View and analyze transactions in real time.",
+        "Built a full-stack fraud detection dashboard using React (Vite), Node.js, and PostgreSQL (Neon). Designed APIs to handle real-time transaction data and developed an interactive UI to analyze and identify potentially fraudulent activity.",
       imgSrc: "/images/fraud-dashboard.jpg",
       liveUrl: "https://fraud-detection-frontend-lqc6.vercel.app",
+      githubUrl: "https://github.com/Juan8834/fraud-detection-frontend", 
       featured: true
     },
     {
       title: "Pokémon List",
       description:
-        "Explore Pokémon data from the official API with search, pagination, and detailed stats. Fully responsive and interactive.",
+        "Created a responsive React application that integrates with a public API to display and search Pokémon data. Implemented pagination, dynamic data rendering, and interactive UI components for an improved user experience.",
       imgSrc: "/images/pokemon-app.jpg",
       liveUrl: "https://Pokemon-list-seven-omega.vercel.app",
+      githubUrl: "https://github.com/Juan8834/Pokemon-List", 
       featured: false
     },
     {
       title: "Pac-Man Game",
       description:
-        "Grid-based Pac-Man game using HTML, CSS, and JavaScript. Navigate the maze, eat dots, and enjoy smooth animations.",
+        "Developed a grid-based Pac-Man game using JavaScript, HTML, and CSS. Implemented game logic, collision detection, and smooth animations to recreate classic arcade gameplay.",
       imgSrc: "/images/pacman-app.jpg",
       liveUrl: "https://juan8834.github.io/pacman-game/",
+      githubUrl: "https://github.com/Juan8834/pacman-game", 
       featured: false
     },
     {
       title: "Tic-Tac-Toe Game",
       description:
-        "React-based Tic-Tac-Toe with animated Xs and Os, responsive design, and confetti celebration on wins.",
+        "Built an interactive Tic-Tac-Toe game using React with animated components and responsive design. Added win detection logic and enhanced user experience with visual feedback and celebration effects.",
       imgSrc: "/images/tic-tac-toe.jpg",
       liveUrl: "https://Juan8834.github.io/Juans-tic-tac-toe-demo",
+      githubUrl: "https://github.com/Juan8834/Juans-tic-tac-toe-demo", 
       featured: false
     }
   ];
-
   // Featured projects first
   const featuredProjects = projects.filter(p => p.featured);
   const otherProjects = projects.filter(p => !p.featured);

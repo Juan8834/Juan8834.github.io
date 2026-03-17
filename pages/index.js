@@ -1,7 +1,27 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
+  const featuredProjects = [
+    {
+      title: "Financial Dashboard",
+      description:
+        "Developed a full-stack financial dashboard using Next.js and NextAuth.js, enabling secure user authentication and dynamic invoice management. Implemented advanced search functionality across multiple fields and designed a fully responsive UI for seamless use across devices.",
+      imgSrc: "/images/financial-dashboard.jpg",
+      liveUrl: "https://nextjs-dashboard-pi-seven.vercel.app",
+      githubUrl: "https://github.com/Juan8834/nextjs-dashboard"
+    },
+    {
+      title: "Fraud Detection Dashboard",
+      description:
+        "Built a full-stack fraud detection dashboard using React (Vite), Node.js, and PostgreSQL (Neon). Designed APIs to handle real-time transaction data and developed an interactive UI to analyze and identify potentially fraudulent activity.",
+      imgSrc: "/images/fraud-dashboard.jpg",
+      liveUrl: "https://fraud-detection-frontend-lqc6.vercel.app",
+      githubUrl: "https://github.com/Juan8834/fraud-detection-frontend"
+    }
+  ];
+
   return (
     <div>
       <Navbar />
@@ -98,101 +118,27 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/* ===== Featured Projects ===== */}
-<section className="section-dark">
-  <div className="container">
-    <h2 style={{ textAlign: "center", marginBottom: "3rem", color: "#ffcc00" }}>
-      Featured Projects
-    </h2>
 
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-        gap: "2rem"
-      }}
-    >
-      {/* Financial Dashboard */}
-      <div
-        className="project-card"
-        style={{
-          background: "#0d1b2a",
-          padding: "1.5rem",
-          borderRadius: "16px",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.4)"
-        }}
-      >
-        <img
-          src="/images/financial-dashboard.jpg"
-          alt="Financial Dashboard"
-          style={{
-            width: "100%",
-            height: "280px",
-            objectFit: "top",
-            borderRadius: "10px",
-            marginBottom: "1rem"
-          }}
-        />
+      {/* ===== Featured Projects ===== */}
+      <section className="section-dark">
+        <div className="container">
+          <h2 style={{ textAlign: "center", marginBottom: "3rem", color: "#ffcc00" }}>
+            Featured Projects
+          </h2>
 
-        <h3 style={{ marginBottom: "0.5rem" }}>Financial Dashboard</h3>
-
-        <p style={{ marginBottom: "1rem", color: "#ddd", lineHeight: "1.6" }}>
-          Manage and track finances with secure authentication using NextAuth.js,
-          search invoices by multiple fields, responsive design for desktop and mobile.
-        </p>
-
-        <a
-          href="https://nextjs-dashboard-pi-seven.vercel.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary"
-        >
-          View Live Project
-        </a>
-      </div>
-
-      {/* Fraud Detection Dashboard */}
-      <div
-        className="project-card"
-        style={{
-          background: "#0d1b2a",
-          padding: "1.5rem",
-          borderRadius: "16px",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.4)"
-        }}
-      >
-        <img
-          src="/images/fraud-dashboard.jpg"
-          alt="Fraud Detection Dashboard"
-          style={{
-            width: "100%",
-            height: "280px",
-            objectFit: "top",
-            borderRadius: "10px",
-            marginBottom: "1rem"
-          }}
-        />
-
-        <h3 style={{ marginBottom: "0.5rem" }}>Fraud Detection Dashboard</h3>
-
-        <p style={{ marginBottom: "1rem", color: "#ddd", lineHeight: "1.6" }}>
-          Full-stack fraud detection dashboard built with Vite + React for frontend,
-          Express + Node for backend, and PostgreSQL via Neon. View and analyze
-          transactions in real time.
-        </p>
-
-        <a
-          href="https://fraud-detection-frontend-lqc6.vercel.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary"
-        >
-          View Live Project
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "2rem"
+            }}
+          >
+            {featuredProjects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
